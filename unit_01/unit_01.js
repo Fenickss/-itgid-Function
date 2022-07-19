@@ -74,99 +74,139 @@
 // Task 5
 // Устали? У нас есть две функции. Одна even, вторая odd. Напишите функцию t5, которая получает из input.i-5 число, проверяет его на четность и запускает even если число четное и odd если нет.
 
-const out5 = document.querySelector(".out-5");
-let i5 = document.querySelector(".i-5");
-document.querySelector(".b-5").addEventListener("click", t5);
+// const out5 = document.querySelector(".out-5");
+// let i5 = document.querySelector(".i-5");
+// document.querySelector(".b-5").addEventListener("click", t5);
 
-function odd() {
-  out5.textContent = "odd";
-}
+// function odd() {
+//   out5.textContent = "odd";
+// }
 
-function even() {
-  out5.textContent = "even";
-}
+// function even() {
+//   out5.textContent = "even";
+// }
 
-function t5() {
+// function t5() {
 
-  if(Number(i5.value) % 2 === 0 ){
-    even();
-  }
-  else{
-    odd();
-  }
-  console.log(out5);
+//   if(Number(i5.value) % 2 === 0 ){
+//     even();
+//   }
+//   else{
+//     odd();
+//   }
+//   console.log(out5);
 
-}
-t5();
-
-
-
-
+// }
+// t5();
 
 // Task 6
-// Давайте усложним задачу. У нас есть функцию getRandomInt2 которая использует переменные min, max выводит в out-2 случайное целое число. Напишите функцию t6, которая запускает getRandomInt2, после чего, получает из .out-2 сгенерированное число и определяет четное оно или нет. Если четное, запускает функцию even, если нет - odd. Обратите внимание, как написаны функции even, odd.
+// Давайте усложним задачу. У нас есть функцию getRandomInt2 которая использует переменные min, max выводит в out-6 случайное целое число. Напишите функцию t6, которая запускает getRandomInt2, после чего, получает из .out-6 сгенерированное число и определяет четное оно или нет. Если четное, запускает функцию even, если нет - odd. Обратите внимание, как написаны функции even, odd.
 
-const out6 = document.querySelector(".out-6");
+// const out6 = document.querySelector(".out-6");
 
-function t6() {
-  function odd() {
-    out6.textContent = "odd";
-  }
-  function even() {
-    out6.textContent = "even";
-  }
-  min = 10000;
-  max = 10099;
-  // тут запускаете getRandomInt2
-}
+// function t6() {
 
-document.querySelector(".b-6").addEventListener("click", t6);
+//   const getRandomInt2 = (min, max) => {
+//     const math = Math.floor(Math.random() * (max - min + 1)) + min;
+//   function odd() {
+//     out6.textContent = "odd";
+//   }
+//   function even() {
+//     out6.textContent = "even";
+//   }
+
+//   if(math % 2 === 0){
+//     even();
+//     console.log('even');
+//   }
+//   else{
+//     odd();
+//     console.log('odd');
+//   }
+
+// console.log(math);
+//   }
+//   getRandomInt2(10000, 10099);
+// }
+// t6();
+// document.querySelector(".b-6").addEventListener("click", t6);
 
 // Task 7
 // Дана переменная z7 равная 91. При клике по кнопке b-7 запускается функция t7, которая увеличивает переменную z7 на единицу и выводит в out-7. Добавьте условие, что если z7 равна 100, то дальше мы не увеличиваем значение z7.
 
-const out7 = document.querySelector(".out-7");
-let z7 = 91;
+// const out7 = document.querySelector(".out-7");
+// let z7 = Number(91);
 
-function t7() {}
+// function t7() {
+//   if (z7 < 100) {
 
-document.querySelector(".b-7").addEventListener("click", t7);
+//     z7 += 1;
+//     out7.innerHTML = z7;
+//     console.log(z7);
+//   }
+//   else{
+//     alert('Cтоп');
+//   }
+// }
+
+// t7();
+
+// document.querySelector(".b-7").addEventListener("click", t7);
 
 // Task 8
 // Дана переменная z8 равная 0. Напишите функцию t8, которая при клике по .b-8 увеличивает z8 на единицу и запускает функцию showNumber. Если число z8 равно 9, то при последующем клике становится равным 0.
 
-const out8 = document.querySelector(".out-8");
-const digit = [
-  "нуль",
-  "один",
-  "два",
-  "три",
-  "четыре",
-  "пять",
-  "шесть",
-  "семь",
-  "восемь",
-  "девять",
-];
-let z8 = 0;
+// const out8 = document.querySelector(".out-8");
+// const digit = [
+//   "нуль",
+//   "один",
+//   "два",
+//   "три",
+//   "четыре",
+//   "пять",
+//   "шесть",
+//   "семь",
+//   "восемь",
+//   "девять",
+// ];
+// let z8 = 0;
 
-function showNumber() {
-  out8.innerHTML = digit[z8];
-}
+// function showNumber() {
+//   out8.innerHTML = digit[z8];
+// }
 
-function t8() {}
+// function t8() {
 
-document.querySelector(".b-8").addEventListener("click", t8);
+//   if( z8 < 9){
+//   z8 += 1
+//   }
+//   else{
+//     z8 = 0;
+//   }
+//   showNumber();
+
+//    console.log(z8);
+// }
+// t8();
+
+// document.querySelector(".b-8").addEventListener("click", t8);
 
 // Task 9
-// Напишите функцию t9, которая в зависимости от значения переменной z9, делает активным option s.9 в таким же value. Внимание, z9 может иметь значения 1, 2, 3, 4, 5. Действия запускаются по кнопке .b-9.
+// Напишите функцию t9, которая в зависимости от значения переменной z9, делает активным option s9 в таким же value. Внимание, z9 может иметь значения 1, 2, 3, 4, 5. Действия запускаются по кнопке .b-9.
 
-let z9 = 3;
-const s9 = document.querySelector(".s-9");
+// let z9 = 3;
+// const s9 = document.querySelector(".s-9");
 
-function t9() {}
 
-document.querySelector(".b-9").addEventListener("click", t9);
+// function t9() {
+//   z9 = s9.value
+
+//   console.log(z9);
+  
+// }
+// t9();
+
+// document.querySelector(".b-9").addEventListener("click", t9);
 
 // Task 10
 // Напишите функцию, которая перебирает массив ar10 и в ar10_res записывает только числа из ar10. В конце функции t10 для вывода массива запустите функцию showArr.
@@ -180,7 +220,15 @@ function showArr() {
 }
 
 function t10() {
-  ar10_res = []; // очищаем
+  
+  for (const arr of ar10) {
+    if(arr === ar10){
+      const test = puch(arr);
+      console.log(test);
+    }
+   
+  }
 }
+t10();
 
 document.querySelector(".b-10").addEventListener("click", t10);
