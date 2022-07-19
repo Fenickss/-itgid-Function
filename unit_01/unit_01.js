@@ -75,7 +75,7 @@
 // Устали? У нас есть две функции. Одна even, вторая odd. Напишите функцию t5, которая получает из input.i-5 число, проверяет его на четность и запускает even если число четное и odd если нет.
 
 const out5 = document.querySelector(".out-5");
-let i_5 = document.querySelector(".i-5");
+let i5 = document.querySelector(".i-5");
 
 function odd() {
   out5.textContent = "odd";
@@ -86,7 +86,14 @@ function even() {
 }
 
 function t5() {
-  console.log(i_5);
+
+  if(Number(i5.value) % 2 === 0 ){
+    even();
+  }
+  else{
+    odd();
+  }
+  console.log(out5);
 
   return 
 }
