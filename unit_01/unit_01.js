@@ -75,7 +75,7 @@
 // Устали? У нас есть две функции. Одна even, вторая odd. Напишите функцию t5, которая получает из input.i-5 число, проверяет его на четность и запускает even если число четное и odd если нет.
 
 const out5 = document.querySelector(".out-5");
-const i_5 = document.querySelector(".i-5");
+let i_5 = document.querySelector(".i-5");
 
 function odd() {
   out5.textContent = "odd";
@@ -86,9 +86,14 @@ function even() {
 }
 
 function t5() {
+  console.log(i_5);
+
+  return 
 }
 
 document.querySelector(".b-5").addEventListener("click", t5);
+
+t5();
 
 // Task 6
 // Давайте усложним задачу. У нас есть функцию getRandomInt2 которая использует переменные min, max выводит в out-2 случайное целое число. Напишите функцию t6, которая запускает getRandomInt2, после чего, получает из .out-2 сгенерированное число и определяет четное оно или нет. Если четное, запускает функцию even, если нет - odd. Обратите внимание, как написаны функции even, odd.
