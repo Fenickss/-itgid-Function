@@ -86,15 +86,7 @@ function even() {
 }
 
 function t5() {
-  if (2 % 2 === 0) {
-    
-  }
-  else{
-    out5.textContent = even();
-  }
-  console.log(out5);
 }
-t5();
 
 document.querySelector(".b-5").addEventListener("click", t5);
 
